@@ -11,7 +11,7 @@ export default function Navbar() {
     { name: 'HOME', href: '/', hasDropdown: false },
     { name: 'ABOUT US', href: '/about', hasDropdown: false },
     { name: 'PRODUCTS', href: '/products', hasDropdown: false },
-    { name: 'BLOG', href: '/blog', hasDropdown: false },
+    { name: 'BROCHURE', href: '/brochure', hasDropdown: false },
     { name: 'CONTACT US', href: '/contact', hasDropdown: false },
   ];
 
