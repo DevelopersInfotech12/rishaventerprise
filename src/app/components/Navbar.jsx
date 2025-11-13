@@ -17,17 +17,6 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Top Banner */}
-      <div className="bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 text-white py-2 md:py-2.5">
-        <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8 flex justify-center items-center">
-          <div className="flex items-center gap-2 sm:gap-4 font-sans text-center">
-            <span className="text-xs sm:text-sm opacity-90">🎉 Special Offer: 20% Off All Camping Gear!</span>
-            <span className="hidden sm:inline text-xs opacity-75">|</span>
-            <span className="hidden sm:inline text-xs md:text-sm opacity-90">Free Shipping on Orders Over $50</span>
-          </div>
-        </div>
-      </div>
-
       {/* Main Navbar */}
       <nav className="bg-white shadow-lg sticky top-0 z-50 border-b-2 border-blue-100">
         <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8">
@@ -122,9 +111,9 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu - Now Fixed Position */}
       {isMenuOpen && (
-        <div className="lg:hidden bg-gradient-to-br from-white to-blue-50 border-t-2 border-blue-100 shadow-xl">
+        <div className="lg:hidden fixed top-16 md:top-20 left-0 right-0 bg-gradient-to-br from-white to-blue-50 border-t-2 border-blue-100 shadow-xl z-40 max-h-[calc(100vh-4rem)] md:max-h-[calc(100vh-5rem)] overflow-y-auto">
           <div className="px-3 sm:px-4 py-4 sm:py-6 space-y-2 max-w-7xl mx-auto">
             {menuItems.map((item) => (
               <a
@@ -168,6 +157,14 @@ export default function Navbar() {
             </div>
           </div>
         </div>
+      )}
+
+      {/* Backdrop overlay when menu is open */}
+      {isMenuOpen && (
+        <div 
+          className="lg:hidden fixed inset-0 bg-black bg-opacity-50 z-30 top-16 md:top-20"
+          onClick={() => setIsMenuOpen(false)}
+        />
       )}
 
       <style jsx>{`

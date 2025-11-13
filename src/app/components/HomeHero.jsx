@@ -278,7 +278,7 @@ const HomeHero = () => {
                 </div>
                 
                 <div 
-                  className="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-800/60 to-transparent transition-all duration-500"
+                  className="absolute inset-0 bg-gradient-to-t from-gray-700 via-gray-90/50 to-transparent transition-all duration-500"
                   style={{
                     opacity: hoveredCard === category.id ? 0.95 : 1
                   }}

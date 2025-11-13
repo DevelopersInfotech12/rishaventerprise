@@ -938,7 +938,7 @@ const products = [
                 {/* Pricing */}
                 <div className="flex items-baseline gap-2">
                   <span className={`text-4xl font-bold bg-gradient-to-r ${product.color} bg-clip-text text-transparent`}>
-                    {product.price}
+                    {/* {product.price} */}
                   </span>
                   <span className="text-gray-500 text-sm">
                     {product.period}

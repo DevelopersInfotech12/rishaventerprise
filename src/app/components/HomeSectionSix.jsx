@@ -138,13 +138,7 @@ const HomeSectionSix = () => {
                   {product.name}
                 </h3>
                 <div className="flex items-center justify-between mt-4">
-                  <span className="text-2xl font-bold text-orange-500 transition-transform duration-300"
-                    style={{
-                      transform: hoveredCard === product.id ? 'scale(1.1)' : 'scale(1)'
-                    }}
-                  >
-                    ₹{product.price}
-                  </span>
+                
                   <button
                     className="bg-gradient-to-r from-amber-400 to-orange-600 text-white px-4 py-2 rounded-lg transition-all duration-300 text-sm font-medium relative overflow-hidden group"
                     style={{
