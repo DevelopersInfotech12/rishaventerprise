@@ -1,8 +1,8 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import Hero from '../components/hero'
 import ProductSection from '../components/ProductSection'
+import Hero from '../components/Hero'
 
 const ProductScreen = () => {
   return (
