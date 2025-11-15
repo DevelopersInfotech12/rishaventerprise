@@ -1,3 +1,4 @@
+import WhatsAppWidget from "./components/WhatsAppWidget";
 import "./globals.css";
 
 export const metadata = {
@@ -10,6 +11,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
       >
+            <WhatsAppWidget/>
         {children}
       </body>
     </html>
