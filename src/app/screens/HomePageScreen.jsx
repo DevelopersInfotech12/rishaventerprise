@@ -19,7 +19,6 @@ const HomePageScreen = () => {
       <HomeSectionSix/>
       <HomeSectionThree/>
       <HomeSectionFour/>
-      
       <Footer/>
       {/* <HomeSectionFive/> */}
     </div>

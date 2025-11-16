@@ -181,6 +181,7 @@ const HomeSectionSix = () => {
                 </h3>
 
                 <div className="flex items-center justify-between mt-6">
+                  <Link href="/products">
                   <button
                     className="relative bg-gradient-to-r from-amber-400 to-orange-600 text-white px-6 py-3 rounded-xl transition-all duration-300 text-sm font-bold overflow-hidden shadow-md"
                     style={{
@@ -209,6 +210,7 @@ const HomeSectionSix = () => {
                       }}
                     />
                   </button>
+                   </Link>
                 </div>
               </div>
             </div>

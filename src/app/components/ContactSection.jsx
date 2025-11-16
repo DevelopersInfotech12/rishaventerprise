@@ -51,7 +51,7 @@ export default function ContactSection() {
               Touch
             </span>
           </h2>
-          <p className={`text-base font-sans text-gray-600 max-w-2xl mx-auto transition-all duration-1000 delay-200 max-w-lg ${
+          <p className={`text-base font-sans font-semibold text-gray-500 max-w-2xl mx-auto transition-all duration-1000 delay-200 max-w-lg ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}>
             Ready to start your next project? Drop us a line and let's create something amazing together.
@@ -71,7 +71,7 @@ export default function ContactSection() {
                 }`}
                 style={{ transitionDelay: '200ms' }}
               > 
-                <span className="bg-gradient-to-r from-amber-400 to-orange-600 bg-clip-text text-transparent font-semibold text-3xl tracking-wider uppercase">
+                <span className="bg-gradient-to-r from-amber-500 to-orange-700 bg-clip-text text-transparent font-semibold text-3xl tracking-wider uppercase">
                   CONTACT DETAILS
                 </span>
                 <div className="w-12 h-0.5 bg-gradient-to-r from-orange-600 to-amber-100 animate-expand"></div>
@@ -154,7 +154,7 @@ export default function ContactSection() {
                 }`}
                 style={{ transitionDelay: '200ms' }}
               > 
-                <span className="bg-gradient-to-r from-amber-400 to-orange-600 bg-clip-text text-transparent font-semibold text-3xl tracking-wider uppercase">
+                <span className="bg-gradient-to-r from-amber-500 to-orange-700 bg-clip-text text-transparent font-semibold text-3xl tracking-wider uppercase">
                   SEND US A MESSAGE
                 </span>
                 <div className="w-12 h-0.5 bg-gradient-to-r from-orange-600 to-amber-100 animate-expand"></div>

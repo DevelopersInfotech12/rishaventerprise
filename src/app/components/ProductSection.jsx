@@ -1,7 +1,7 @@
 "use client"
-
 import React, { useState } from 'react';
 import { Sparkles, Droplet, Wind, ShieldCheck, Clock, Leaf, ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 const ProductSection = () => {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -364,7 +364,7 @@ const products = [
     name: "SG3 & S+ Spray Gun",
     category: "painting",
     price: "$249",
-    image: "/images/img44.jpg",
+    image: "/images/img20.jpg",
     description: "Professional HVLP spray guns",
     features: ["HVLP technology", "Adjustable pattern", "Precision nozzle", "Ergonomic design"],
     icon: <Sparkles className="w-6 h-6" />,
@@ -960,10 +960,12 @@ const products = [
                 </ul>
 
                 {/* CTA Button */}
-                <button className={`w-48 group/btn bg-gradient-to-r ${product.color} text-white py-3 rounded-2xl font-semibold hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2`}>
-                  Buy Now
+                <Link href="/contact">
+                <button className={`w-full my-4 group/btn bg-gradient-to-r ${product.color} text-white py-3 rounded-2xl font-semibold hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2`}>
+                  Get Exclusive Pricing
                   <ArrowRight className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" />
                 </button>
+                </Link>
               </div>
 
               {/* Decorative Border Glow */}
