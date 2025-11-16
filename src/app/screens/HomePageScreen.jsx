@@ -8,6 +8,7 @@ import HomeSectionFour from '../components/HomeSectionFour'
 import HomeSectionFive from '../components/ProductSection'
 import HomeSectionSix from '../components/HomeSectionSix'
 import Footer from '../components/Footer'
+import HomeSectionType from '../components/HomeSectionType'
 
 const HomePageScreen = () => {
   return (
@@ -16,6 +17,7 @@ const HomePageScreen = () => {
       <HomeHero/>
       <HomeSectionOne/>
       <HomeSectionTwo/>
+      <HomeSectionType/>
       <HomeSectionSix/>
       <HomeSectionThree/>
       <HomeSectionFour/>
