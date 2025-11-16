@@ -49,7 +49,7 @@ const Footer = () => {
 
   const workingHours = [
     { day: 'Mon-Wed', time: '8:00 AM - 7:00 PM' },
-    { day: 'Thu-Mon', time: '8:00 AM - 6:00 PM' },
+    { day: 'Thu-Sat', time: '8:00 AM - 6:00 PM' },
     { day: 'Friday', time: 'Full Day Closed' }
   ];
 
@@ -63,8 +63,8 @@ const Footer = () => {
   return (
     <footer ref={footerRef} className="bg-slate-900 text-white overflow-hidden">
       {/* Main Footer Content */}
-      <div className="max-w-7xl mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="max-w-6xl mx-auto px-4 py-12 justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-36">
           {/* Company Info */}
           <div 
             className={`transition-all duration-700 ${
@@ -74,7 +74,7 @@ const Footer = () => {
           >
             <div className="flex items-center gap-2 mb-6">
          
-           <img src="/images/logo2.png" alt="" srcset="" />
+           <img src="/images/logo2.png" alt=""  />
             </div>
             <p className="text-gray-400 text-sm mb-6">
            Enhancing strength and appearance through expert blasting and coating solutions.
@@ -108,56 +108,7 @@ const Footer = () => {
           </div>
 
           {/* Top Links */}
-          <div
-            className={`transition-all duration-700 lg:ml-24 ${
-              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
-            }`}
-            style={{ transitionDelay: '200ms' }}
-          >
-            <h3 className="text-lg font-semibold mb-6 relative inline-block">
-              Top Links
-              <span 
-                className="absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-700"
-                style={{ width: isVisible ? '40px' : '0px' }}
-              />
-            </h3>
-            <ul className="space-y-3">
-              {topLinks.map((link, index) => (
-                <li 
-                  key={link.name}
-                  className={`transition-all duration-500 ${
-                    isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4'
-                  }`}
-                  style={{ transitionDelay: `${300 + index * 50}ms` }}
-                >
-                  <a
-                    href={link.href}
-                    className="text-gray-300 hover:text-white transition-all duration-300 text-sm inline-flex items-center group"
-                    onMouseEnter={() => setHoveredLink(link.name)}
-                    onMouseLeave={() => setHoveredLink(null)}
-                  >
-                    <span 
-                      className="inline-block transition-transform duration-300"
-                      style={{
-                        transform: hoveredLink === link.name ? 'translateX(8px)' : 'translateX(0)'
-                      }}
-                    >
-                      {link.name}
-                    </span>
-                    <span 
-                      className="ml-2 transition-all duration-300"
-                      style={{
-                        opacity: hoveredLink === link.name ? 1 : 0,
-                        transform: hoveredLink === link.name ? 'translateX(0)' : 'translateX(-8px)'
-                      }}
-                    >
-                      →
-                    </span>
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+          
 
           {/* Our Services */}
           <div

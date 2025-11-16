@@ -71,7 +71,7 @@ const HomeHero = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/30" />
               <div className="absolute inset-0 flex flex-col justify-center px-4 sm:px-6">
                 <p 
-                  className={`text-lime-400 text-xs sm:text-sm font-semibold mb-2 sm:mb-3 tracking-wider transition-all duration-1000 ${
+                  className={`text-lime-400 text-xl font-semibold mb-2 sm:mb-3 tracking-wider transition-all duration-1000 ${
                     isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
                   }`}
                   style={{ transitionDelay: '400ms' }}
@@ -79,7 +79,7 @@ const HomeHero = () => {
                   {slide.price}
                 </p>
                 <h1 
-                  className={`text-white text-xl xs:text-2xl sm:text-3xl font-bold mb-3 sm:mb-4 leading-tight transition-all duration-1000 ${
+                  className={`text-white text-3xl font-bold mb-3 sm:mb-4 leading-tight transition-all duration-1000 ${
                     isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
                   }`}
                   style={{ transitionDelay: '600ms' }}
@@ -211,7 +211,7 @@ const HomeHero = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
               <div className="absolute inset-0 flex flex-col justify-center px-12 xl:px-16">
                 <p 
-                  className={`text-lime-400 text-sm xl:text-base font-semibold mb-4 tracking-wider transition-all duration-1000 ${
+                  className={`text-lime-400 text-3xl  font-semibold mb-4 tracking-wider transition-all duration-1000 ${
                     isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
                   }`}
                   style={{ transitionDelay: '400ms' }}

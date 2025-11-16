@@ -9,15 +9,16 @@ const HomeSectionThree = () => {
   const [counters, setCounters] = useState([0, 0, 0, 0]);
 
   const clients = [
-    { name: "Microsoft", logo: "https://logo.clearbit.com/microsoft.com" },
-    { name: "Google", logo: "https://logo.clearbit.com/google.com" },
-    { name: "Apple", logo: "https://logo.clearbit.com/apple.com" },
-    { name: "Amazon", logo: "https://logo.clearbit.com/amazon.com" },
-    { name: "Meta", logo: "https://logo.clearbit.com/meta.com" },
-    { name: "Netflix", logo: "https://logo.clearbit.com/netflix.com" },
-    { name: "Tesla", logo: "https://logo.clearbit.com/tesla.com" },
-    { name: "Oracle", logo: "https://logo.clearbit.com/oracle.com" },
-    { name: "Samsung", logo: "https://logo.clearbit.com/samsung.com" }
+    { name: "Microsoft", logo: "/images/client1.webp" },
+    { name: "Google", logo: "/images/client2.webp" },
+    { name: "Apple", logo: "/images/client3.png" },
+    { name: "Amazon", logo: "/images/client4.webp" },
+    { name: "Meta", logo: "/images/client5.png" },
+    { name: "Netflix", logo: "/images/client10.png" },
+   
+    { name: "Oracle", logo: "/images/client8.jpg" },
+    { name: "Samsung", logo: "/images/client1.webp" },
+     { name: "Tesla", logo: "/images/client2.webp" },
   ];
 
   const stats = [
@@ -53,7 +54,7 @@ const HomeSectionThree = () => {
   useEffect(() => {
     if (!isVisible) return;
 
-    const duration = 2000;
+    const duration = 3000;
     const steps = 60;
     const stepDuration = duration / steps;
 
@@ -88,7 +89,7 @@ const HomeSectionThree = () => {
     scrollContent.innerHTML = items + items;
 
     let scrollPos = 0;
-    const scrollSpeed = 0.5;
+    const scrollSpeed = 2;
 
     const animate = () => {
       scrollPos += scrollSpeed;
