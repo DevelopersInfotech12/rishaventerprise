@@ -64,7 +64,7 @@ const Footer = () => {
     <footer ref={footerRef} className="bg-slate-900 text-white overflow-hidden">
       {/* Main Footer Content */}
       <div className="max-w-6xl mx-auto px-4 py-12 justify-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-36">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 lg:gap-16">
           {/* Company Info */}
           <div 
             className={`transition-all duration-700 ${
@@ -90,8 +90,8 @@ const Footer = () => {
                 </div>
                 <span className="text-sm group-hover:translate-x-1 transition-transform duration-300">+91- 9717222570</span>
               </a>
-              <div className="flex items-center gap-3 text-gray-300 group max-w-60">
-                <MapPin className="w-4 h-4 transition-transform duration-300 group-hover:scale-110" />
+              <div className="flex items-center gap-3 text-gray-300 group">
+                <MapPin className="w-4 h-4 flex-shrink-0 transition-transform duration-300 group-hover:scale-110" />
                 <span className="text-sm">House No. 293, Pocket, A-1, Sector 6 Rd, Pocket 1, Sector 6A, Rohini, Delhi, 110085</span>
               </div>
               <a 
@@ -102,7 +102,7 @@ const Footer = () => {
                   <Mail className="w-4 h-4 transition-transform duration-300 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-white/20 rounded-full scale-0 group-hover:scale-150 transition-transform duration-300 opacity-0 group-hover:opacity-100" />
                 </div>
-                <span className="text-sm group-hover:translate-x-1 transition-transform duration-300">Rishaventerprises@gmail.com</span>
+                <span className="text-sm group-hover:translate-x-1 transition-transform duration-300 break-all">Rishaventerprises@gmail.com</span>
               </a>
             </div>
           </div>
@@ -204,7 +204,7 @@ const Footer = () => {
             }`}
             style={{ transitionDelay: '600ms' }}
           >
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-400 text-sm text-center md:text-left">
               Developed By Developers Infotech. All Rights Reserved
             </p>
             <div className="flex items-center gap-3">
